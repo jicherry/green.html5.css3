@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calc(num1, num2) {
+            //속성
+            this.num1 = num1;
+            this.num2 = num2;
+
+            //메소드
+            Clac.prototype.add = function() {
+                var result = this.num1 + this.num2;
+                return result;
+            }
+
+            Clac.prototype.sub = function() {
+                var result = this.num1 - this.num2;
+                return result;
+            }
+
+            Clac.prototype.division = function() {
+                var result = this.num1 / this.num2;
+                return result;
+            }
+
+                Clac.prototype.multiple = function() {
+                var result = this.num1 * this.num2;
+                return result;
+                }
+            }
+
+
+
+
+
+
+        }
+        
+    }
+
+
+    </script>
+</body>
+</html>

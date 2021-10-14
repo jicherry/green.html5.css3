@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GOTM';
+  src: /*url(../font/gotham-medium.woff2) format('woff2'),*/
+       url(../font/gotham-medium.woff) format('woff'),
+	   url(../font/gotham-medium.eot) format('eot'),
+       url(../font/gotham-medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'GOT';
+  src: /*url(../font/GothamBook.woff2) format('woff2'),*/
+       url(../font/GothamBook.woff) format('woff'),
+	   url(../font/GothamBook.eot) format('eot'),
+       url(../font/GothamBook.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'SEOM';
+	src: /*url(../font/SeoulHangangM.woff2) format('woff2'),*/
+	   url(../font/SeoulHangangM.woff) format('woff'),
+	   url(../font/SeoulHangangM.eot) format('eot'),
+	   url(../font/SeoulHangangM.otf) format('opentype');
+}
+@font-face {
+   font-family: 'NSKM';
+   src: /*url(../font/NotoSansKR-Medium-Hestia.woff2) format('woff2');*/
+	   url(../font/NotoSansKR-Medium-Hestia.woff) format('woff'),
+	   url(../font/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+@font-face {
+	font-family: 'NSKR';
+	src: /*url(../font/NotoSansKR-Regular-Hestia.woff2) format('woff2'),*/
+	   url(../font/NotoSansKR-Regular-Hestia.woff) format('woff'),
+	   url(../font/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+@font-face {
+	font-family: 'NSKL';
+	src: /*url(../font/NotoSansKR-Light-Hestia.woff2) format('woff2'),*/
+	   url(../font/NotoSansKR-Light-Hestia.woff) format('woff'),
+	   url(../font/NotoSansKR-Light-Hestia.otf) format('opentype');
+}
+/*add font pulmuone*/
+
+@font-face {
+	font-family: 'pulmoune';
+	src: /*url(../font/NotoSansKR-Light-Hestia.woff2) format('woff2'),*/
+	   url(../font/Pulmuone.woff) format('woff'),
+	   url(../font/Pulmuone.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Lohas_b';
+	src: /*url(../font/NotoSansKR-Light-Hestia.woff2) format('woff2'),*/
+	   url(../font/PulmuoneLOHASBold.woff) format('woff');
+	   /*
+	   url(../font/PulmuoneLOHASBold.otf) format('opentype');*/
+}
+
+@font-face {
+	font-family: 'Lohas_l';
+	src: /*url(../font/NotoSansKR-Light-Hestia.woff2) format('woff2'),*/
+	   url(../font/PulmuoneLOHASLight.woff) format('woff'),
+	   url(../font/PulmuoneLOHASLight.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Lohas_m';
+	src: /*url(../font/NotoSansKR-Light-Hestia.woff2) format('woff2'),*/
+	   url(../font/PulmuoneLOHASMedium.woff) format('woff'),
+	   url(../font/PulmuoneLOHASMedium.otf) format('opentype');
+}
+
+.ftpp {
+	font-family: 'pulmoune';
+
+}
+.lohas_b {
+	font-family: 'Lohas_b';
+}
+
+.lohas_m {
+	font-family: 'Lohas_m';
+}
+.lohas_l {
+	font-family: 'Lohas_l';
+}
+
+/* standard css start */
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, span, a, table, thead, tfoot, tbody, th, td, form, legend, label, input, textarea, address, strong, em, pre, q, abbr, acronym, cite, blockquote, object, iframe {margin:0; padding:0;}
+body {font-family: 'NSKR', '맑은 고딕'; font-size:16px; color:#7d7d7d; line-height:1; word-break:keep-all; -webkit-text-size-adjust: none;/*아이폰 글자크기 자동조정 방지*/ /*overflow:scroll; overflow-x:hidden;*/}
+@-moz-document url-prefix(){ body {letter-spacing:-0.3px;};}
+img, fieldset, hr {border:0; margin:0; padding:0;}
+img {vertical-align:top;}
+ul, ol {list-style-type:none;}
+h1, h2, h3, h4, h5, h6 {font-size:12px; font-weight:normal;}
+select, input, textarea {font-family: 'NSKR', '맑은 고딕' sans-serif; color:#666; vertical-align:middle;}
+select {height:18px;}
+table {border-collapse:collapse;}
+address {font-style:normal;}
+hr {clear:both; display:none;}
+legend, caption {width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+
+a:link,a:visited			{color:#666; text-decoration:none;}
+a:hover,a:active,a:focus	{color:#666; text-decoration:none;}
+
+input, textarea				{ -webkit-appearance:none; -webkit-border-radius:0; }
+input[type="checkbox"]		{ -webkit-appearance:checkbox; }
+input[type="radio"]			{ -webkit-appearance:radio; -webkit-border-radius:10px; }
+table {table-layout:fixed; margin:0; padding:0; border:0; border-collapse: separate; border-spacing: 0;}
+select {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 17px;
+    color: #666;
+    background: transparent;
+    padding: 0 20px;
+}
+select::-ms-expand {
+    display: none;
+}

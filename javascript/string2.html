@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var userName = prompt("당신의 영문 이름은?","");
+
+        // var upperName = userName.toUpperCase();
+        // document.write(upperName,"<br>");
+
+        // var userName = prompt("당신의 연락처는?","");
+        // var result = userNum.substring(0, userNum.length -4) + "****";
+
+        // document.write(result, "<br>");
+
+
+        //1.해당 주소를 location 객체를 이용해 구하시오.
+
+        var url = location.href;
+
+        //2.해당 주소에서 string 객체 이용해 쿼리스트링만 분리하시오.
+        var noQ = url.substring(url.indexOF("?")+1, url.length);
+        console.log("===2번 문제===");
+        console.log(noQ);
+
+        //3.각각의 쿼리스트링의 변수와 값을 콘솔에 출력하시오.
+        console.log("===3번 문제===");
+        var arr = noQ.split("&");
+        for (i in arr) {
+            console.log(arr[i]);
+
+        }
+
+        //4.쿼리스트링에서 변수는 변수끼리 배열에 담고 값은 값끼리 배열에 담으시오.
+        console.log("===4번문제===");
+        var variable = []; //값
+
+
+
+
+
+
+    </script>
+</body>
+</html>

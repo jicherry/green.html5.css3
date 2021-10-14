@@ -1,0 +1,96 @@
+// each visible event
+function visibleShow(){
+
+	$('.motion').each(function(){
+		var windowOneViewHeight = $(window).height() / 1000;
+		var top_of_object = $(this).offset().top + ( (windowOneViewHeight * 10)); // no also add the item height, only the offset top is needed
+		var bottom_of_object = $(this).offset().top + ($(this).outerHeight() - (windowOneViewHeight * 10));
+		var top_of_window = $(window).scrollTop();
+		var bottom_of_window = $(window).scrollTop() + $(window).height();  
+
+		if(bottom_of_object < top_of_window) {
+
+			//console.log("위로올림2")
+			//$(this).removeClass("active");
+
+		}
+		else if (top_of_object > bottom_of_window){
+			//console.log("위로올림1")
+			$(this).removeClass('active');
+
+		}   
+		else if(bottom_of_object > top_of_window && top_of_object < bottom_of_window){
+			$(this).addClass('active');
+
+
+		}
+		
+
+	});
+}
+
+$(document).ready(function(){
+	visibleShow();
+
+	$(window).scroll(function(){
+		visibleShow();
+	});
+
+	$('.loca_link a').click(function(){
+		$(this).toggleClass('on');
+		$(this).next('ul').toggle();
+	});
+	$('.pc_header > .inner_header > .bottom_area > .pc_gnb > ul > li').mouseenter(function(){
+		$('.pc_header').addClass('active');
+
+	});
+	$('.pc_header').mouseleave(function(){
+		$('.pc_header').removeClass('active');
+
+	});	
+	$('.bg_header .bg_header_in .pc_2depth li > a').hover(function(){
+		$(this).addClass('on');
+	},function(){
+		$(this).removeClass('on');
+	});
+
+	$('.mo_depth01_span').click(function(){
+		var _this = $(this).parents('.mo_depth01')
+		
+
+		if( _this.hasClass('on') ){
+			$('.mo_depth02').slideUp();
+			_this.removeClass('on')
+		
+		}else{
+			$('.mo_depth02').slideUp();
+			$('.mo_depth01.on').removeClass('on');
+			_this.children('.mo_depth02').slideDown();
+			_this.addClass('on');
+		}
+
+		
+	
+	});
+
+	$('.ham_btn > span').click(function(){
+		$('.mo_header').addClass('gnb_sm');
+	});
+	$('.gnb_close').click(function(){
+		$('.mo_header').removeClass('gnb_sm');
+	});
+
+	$('.search_icon > span').click(function(){
+		if( $('.mo_header').hasClass('search') ){
+			$('.mo_header').removeClass('search');
+		}else{
+			$('.mo_header').addClass('search');
+		}
+	});
+
+	/*
+    
+
+	 */
+});
+

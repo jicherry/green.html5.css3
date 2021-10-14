@@ -1,0 +1,66 @@
+<body> 
+    <input id="toggle" type="checkbox" />
+    <div id="wrap">
+        <header id="main_header"></header>
+        <div id="toggle_gnb_wrap"></div>
+        <nav id="top_gnb"></nav>
+        <nav id="bottom_gnb">
+
+        </nav>
+    </div>
+    <nav id="bottom_gnb">
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+    </nav>
+
+<style>
+    #bottom_gnb {
+        display: table;
+        width: 100%;
+    }
+
+    #bottom_gnb > div {
+        display: table-cell;
+    }
+
+    #bottom_gnb > div > a {
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+</style>
+
+<style>
+    #bottom_gnb {
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    #bottom_gnb > div {
+        display: table-cell;
+        position: relative;
+    }
+
+    #bottom_gnb > div > a {
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    #bottom_gnb > div > a::before {
+        display: block;
+        position: absolute;
+        top: 9px; left: -1px;
+        width: 1px; height: 15px;
+        border-left: 1px solid black;
+        content: '';
+    }
+
+</style>
+</body>

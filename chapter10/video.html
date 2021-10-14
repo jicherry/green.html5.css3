@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    
+    .videoContainer {
+        position: absolute;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+
+    .videoContainer iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <video autoplay loop controls>
+        <source src="scuba.mp4">
+    </video>
+</body>
+</html>

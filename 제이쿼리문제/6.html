@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>each</title>
+<script>
+    $(obj).each(function(i,o) {
+        console.log(i + ":", o);
+    });
+
+    console.log("===end====");
+
+    $.each($("#menu2 li"), function(i,o) {
+        console.log(i + ":", o);
+    });
+
+    console.log("===end====");
+
+    $.each($("#menu2 li"), function(i) {
+        console.log(i + ":", $(this));
+    });
+</script>
+</head>
+<body>
+    <ul id="menu2">
+        <li>0: Html Tutorial</li>
+        <li>1: Mongodb Tutorial</li>
+        <li>2: Python Tutorial</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.etc_pupup_bg {z-index: 9999;display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.6; filter alpha(opacity=60)}
+.etc_pop {display:none;}
+/*개인정보 취급팝업*/
+.etc_popbox1 {position:fixed; top:50%; width:100%; text-align:left;  margin-top:-315px;z-index:9999}
+.etc_popbox1 .cancle {position:absolute; top:25px; right:30px; cursor:pointer}
+.etc_popbox1 .popup{position:relative; width:720px; background:#fff; padding: 26px 31px;  margin:auto; overflow:hidden}
+@media screen and (max-width:720px) {
+.etc_popbox1 .popup{position:relative; width:calc(100% - 62px); background:#fff; padding: 26px 31px;  margin:auto; overflow:hidden}
+
+}
+
+.etc_popbox1 .popup h2.tit {font-family: 'NSKR'; font-size:20px; line-height:1; padding: 0 0 20px 0; margin:0; border-bottom:2px solid #747474; text-align:center}
+.etc_popbox1 .popup .txt_box {height:493px; font-size:15px; color:#636363; line-height:25px; border-bottom:1px solid #d6d6d6; padding:18px 0 18px 0;overflow-y:scroll}
+/*이메일주소무단수집거부 팝업*/
+.etc_popbox2 {position:fixed; top:50%; width:100%; text-align:left;  margin-top:-166px;z-index:9999}
+.etc_popbox2 .cancle {position:absolute; top:25px; right:30px; cursor:pointer}
+.etc_popbox2 .popup {position:relative; width:450px; background:#fff; padding: 26px 31px;  margin:auto; overflow:hidden}
+.etc_popbox2 .popup h2.tit {font-family: 'NSKR'; font-size:20px; line-height:1; padding: 0 0 20px 0; margin:0 0 42px 0; border-bottom:2px solid #747474; text-align:center}
+.etc_popbox2 .popup .txt_box {font-size:15px; color:#636363; line-height:25px; padding:0 20px 0 0; margin-bottom:30px;}
+.etc_popbox2 .popup .txt_box span.b_txt {display:inline-block; color:#333; border-bottom:1px solid #333}
+.etc_popbox2 .popup span.date {display:block; font-family: 'NSKR'; mfont-size:15px; color:#333; padding-bottom:26px }

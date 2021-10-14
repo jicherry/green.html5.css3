@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+
+        }
+
+        .item {
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        .item:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="weapper">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam cum aliquid aut? Illum doloremque alias nemo beatae, rem vero recusandae repudiandae, voluptatem aliquam ipsam quasi eligendi dolorem, atque voluptatum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam cum aliquid aut? Illum doloremque alias nemo beatae, rem vero recusandae repudiandae, voluptatem aliquam ipsam quasi eligendi dolorem, atque voluptatum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam cum aliquid aut? Illum doloremque alias nemo beatae, rem vero recusandae repudiandae, voluptatem aliquam ipsam quasi eligendi dolorem, atque voluptatum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam cum aliquid aut? Illum doloremque alias nemo beatae, rem vero recusandae repudiandae, voluptatem aliquam ipsam quasi eligendi dolorem, atque voluptatum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam cum aliquid aut? Illum doloremque alias nemo beatae, rem vero recusandae repudiandae, voluptatem aliquam ipsam quasi eligendi dolorem, atque voluptatum.</div>
+    </div>
+</body>
+</html>

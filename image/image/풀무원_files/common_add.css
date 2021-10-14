@@ -1,0 +1,150 @@
+.news_cnt .article_l .detail {line-height:25px;}
+
+.reply_list div.reply_close {background:#dfdfdf; text-align:center; padding:9px 0}
+.reply_list div.reply_close a {display:block; font-size:14px;color:#333}
+
+.news_cnt .article_l .detail img {height:auto!important;}
+
+.reply_wrap .write_box .sns ul li img{vertical-align:middle}
+.reply_wrap .write_box .sns ul li img.face {vertical-align:middle}
+
+.event_win {display: block;text-align: center;margin-bottom:-56px;margin-top: 15px;}
+.event_win a {display:inline-block;color:#fff;font-size:18px;text-decoration:none;background:#535353;padding:13px 33px;}
+
+.search_btm_goto li {padding:0 22px 7px 22px;}
+.news_cont06 li p.thum {text-align: center;}
+.recipe_list li .inner_box .thum {text-align: center;}
+.data_list01 li p.thum {text-align: center;}
+.data_list02 li .thum_wrap p.thum {text-align: center;}
+.view_tag_list {margin-top: 15px;}/* 2020-11-11 */
+/* .view_tag_list {display:none;}  */
+.news_cnt .article_l .detail .txt_ty01 {font-size:16px; color:#000; line-height:25px;} /* 2016-11-24 뉴스상세 관련 추가 */ /* 2020-11-11 */
+
+@media all and (min-width:1681px) {
+.news_cont06 li p.thum img {max-width: 238px;}
+}
+@media all and (min-width:1025px) and (max-width:1680px) {
+.news_cont06 li p.thum img {max-width: 238px;}
+}
+@media all and (min-width:760px) and (max-width:1024px) {
+.news_cont06 li p.thum img {max-width: 238px;}
+}
+@media all and (min-width:260px) and (max-width:759px) {
+.news_cont06 li p.thum img {max-width: 100%;}
+
+/* .etc_popbox1 .popup{ width:90%; }
+.etc_popbox2 .popup { width:90%; }
+ */
+}
+
+@media (min-width: 1681px){
+	.section.s03 dl.lay ul.news_list li img {width:286px;}
+}
+
+
+@media only screen and (min-width : 1024px) {
+.news_cont01 {overflow-y: hidden;height: 365px;}
+}
+
+/* .news_cnt .article_l .detail p { margin: 16px 0px;} */
+.board_view .cont_ir p {margin: 16px 0px;}
+
+
+@media only screen and (max-width : 759px) {
+.gnb {overflow-y: auto;}
+}
+@media all and (min-width:760px) and (max-width:1023px) {
+.gnb {overflow-y: auto;}
+}
+
+span.type.news.muse2 {background:#ec7d87;}
+
+.news_cnt .article_l .detail .data_list p { margin: 0;line-height: 14px;}
+
+.thum img.in_logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width:80px !important; height:30px !important
+}
+
+table.business_tbs thead td.china.pos1 {background-position: 174px 7px;}
+span.type.newslohas {background:#d19af4;}
+
+@media only screen and (min-width: 1024px){
+	.fact_list li a.inner_box span.in_pb span.tit {min-height: 60px;}
+}
+@media (min-width : 1024px) {
+	.section.s03 dl.lay ul.news_list li{height: 265px; }
+	.news_cont06 dt {height: 60px;overflow-y: hidden;}
+	.recipe_list li .inner_box dt {padding: 0 0 1px 0; overflow-y: hidden;}
+}
+@media only screen and (max-width: 759px){
+	.recipe_list li .inner_box dt{height: auto; }
+}
+@media (max-width: 1023px) and (min-width: 760px){
+	.recipe_list li .inner_box dt{    padding: 15px 0 1px 0;    overflow-y: hidden;}
+	.news_cont06 dt {height: 64px;    overflow-y: hidden;}
+}
+
+.footer .inner_box .ft_menu li.textbold a {color: #68a12a; font-weight: bold;}
+
+.btn_newsroom{ display: none; position: absolute; top: 50px; left: 160px;font-family: 'NSKR'; font-size: 30px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+.btn_newsroom:hover{text-decoration: none;}
+.btn_newsroom:before{content:""; position: absolute; top: 6px; left: -18px; width: 1px; height: 22px; background-color: #b9b9b9;}
+@media only screen and (min-width: 1024px){
+/* .gnb li { padding:0 17px 0 17px;}
+.gnb #rateScroll1 .inner_bn {padding-left:390px;}
+.gnb #rateScroll1 li .gnb_dp2{ left: -30px;} */
+.btn_newsroom{ display: block;}
+}
+/* 2020-10-29 */
+@media only screen and (max-width: 1023px){ /* 2020-11-11 */
+	.btn_newsroom{display:inline-block; margin:5px 0 0 10px; font-family: 'PLOSB'; font-size: 25px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+@media only screen and (min-width: 1024px){
+/* .gnb li { padding:0 17px 0 17px;}
+.gnb #rateScroll1 .inner_bn {padding-left:390px;}
+.gnb #rateScroll1 li .gnb_dp2{ left: -30px;} */
+	.btn_newsroom{display:inline-block; margin:14px 0 0 13px; font-family: 'PLOSB'; font-size: 30px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+@media all and (min-width:760px) and (max-width:1023px) {
+	.btn_newsroom{display:inline-block; margin:11px 0 0 13px; font-family: 'PLOSB'; font-size: 30px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+/* //2020-10-29 */
+
+
+
+
+
+
+
+
+
+
+.footer .inner_box .ft_menu li:first-child a {color: #004f18 !important;}
+
+@media only screen and (min-width: 1024px) {
+	.footer .inner_box .ft_menu li a {font-size:17px;}
+}
+
+/* 2020-10-29 */
+@media only screen and (max-width: 1023px){ /* 2020-11-11 */
+	.btn_newsroom{display:inline-block; margin:5px 0 0 10px; font-family: 'PLOSB'; font-size: 25px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+@media only screen and (min-width: 1024px){
+/* .gnb li { padding:0 17px 0 17px;}
+.gnb #rateScroll1 .inner_bn {padding-left:390px;}
+.gnb #rateScroll1 li .gnb_dp2{ left: -30px;} */
+	.btn_newsroom{display:inline-block; font-family: 'PLOSB'; font-size: 30px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+@media all and (min-width:760px) and (max-width:1023px) {
+	.btn_newsroom{display:inline-block; position:static; margin:11px 0 0 13px; font-family: 'PLOSB'; font-size: 30px; letter-spacing: -2px; color: #010101 !important; line-height: 1em;}
+	.btn_newsroom:hover{text-decoration: none;}
+}
+/* //2020-10-29 */

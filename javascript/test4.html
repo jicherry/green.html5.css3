@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var str = "<h1>몸무게 계산기</h1>"
+        str = "<table border='2'>";
+        str += "<tr>";
+        str += "<td>이름</td><td>신장</td><td>몸무게</td><td>평균체중</td><td>결과</td>";
+        str += "<tr>";
+        str += "<td>하서</td><td>160</td><td>50</td><td>54</td><td>적정 체중입니다.";
+        str += "</table>";
+        document.write(str);
+
+        var name = prompt("당신의 이름은?", "하서");
+        height = prompt("당신의 신장은?", "160");
+        weight = prompt("당신의 몸무게는?", "50");
+
+    var normal_w = (height - 100) * 0.9;
+    var redult = weight >= normal_w -5 && weight <= normal_w +5;
+    result= result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+    document.write(name+"님은"+result);
+
+
+</script>
+<body>
+    
+</body>
+</html>

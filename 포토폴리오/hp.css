@@ -1,0 +1,42 @@
+@charset "UFT-8";
+
+*{ 
+    font-family: 'Poor Story', cursive;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+
+}
+
+.header{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    margin-left: 200px;
+    font-size: 25px;
+}
+
+.nav li{
+    width: 200px;
+}
+
+.screen{
+    background-color: azure;
+    width: -100%;
+    height: 1000px;
+}
+
+.screen img{
+    display: flex; 
+    margin: 0px auto;
+    width: 500px;
+    height: 500px;
+}
+
+
+
